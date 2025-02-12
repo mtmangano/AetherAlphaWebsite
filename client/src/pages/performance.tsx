@@ -22,7 +22,7 @@ export default function Performance() {
   const COLORS = ['#0088FE', '#00C4B4', '#FFBB28', '#FF8042', '#8884d8', '#82ca9d'];
 
   const selectionCriteria = [
-    { Icon: Zap, title: 'Disruptive Potential', description: 'Investments must be on the cutting edge of AI, blockchain, biotech, or automation.' },
+    { Icon: Zap, title: 'Disruptive Potential', description: 'Every investment is meticulously chosen from the forefront of AI, blockchain, biotech, and automation—targeting innovations that redefine the future' },
     { Icon: TrendingUp, title: 'Scalability', description: 'Companies or assets must demonstrate exponential growth potential.' },
     { Icon: Clock, title: 'Market Timing', description: 'Utilizing advanced data analytics and AI-driven models to determine optimal entry points.' },
     { Icon: Shield, title: 'Risk Management', description: 'Strategic hedging techniques and diversified allocations to mitigate volatility.' },
