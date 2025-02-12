@@ -26,8 +26,15 @@ export default function Performance() {
       <Link href="/">
         <motion.h1 
           className="text-3xl font-bold text-primary font-['Inter'] cursor-pointer"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.2 }}
+          whileHover={{ 
+            scale: 1.05,
+            color: "hsl(var(--primary))",
+            transition: {
+              duration: 0.2,
+              ease: "easeInOut"
+            }
+          }}
+          whileTap={{ scale: 0.95 }}
         >
           AetherAlpha
         </motion.h1>
@@ -72,7 +79,7 @@ export default function Performance() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <h2 className="text-4xl font-bold mb-4 font-['Playfair Display']">
+          <h2 className="text-5xl font-bold mb-4 text-black">
             The Vanguard Portfolio
           </h2>
           <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
