@@ -46,7 +46,6 @@ export default function Performance() {
           className="text-3xl font-bold text-primary font-['Inter'] cursor-pointer"
           whileHover={{ 
             scale: 1.05,
-            color: "hsl(var(--primary))",
             transition: {
               duration: 0.2,
               ease: "easeInOut"
