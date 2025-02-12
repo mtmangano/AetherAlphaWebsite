@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
+import { Zap, TrendingUp, Clock, Shield, LandmarkIcon, Rocket } from 'lucide-react';
 
 export default function Performance() {
   const performanceData = [
@@ -21,12 +22,12 @@ export default function Performance() {
   const COLORS = ['#0088FE', '#00C4B4', '#FFBB28', '#FF8042', '#8884d8', '#82ca9d'];
 
   const selectionCriteria = [
-    { icon: '🔥', title: 'Disruptive Potential', description: 'Investments must be on the cutting edge of AI, blockchain, biotech, or automation.' },
-    { icon: '📈', title: 'Scalability', description: 'Companies or assets must demonstrate exponential growth potential.' },
-    { icon: '⏳', title: 'Market Timing', description: 'Utilizing advanced data analytics and AI-driven models to determine optimal entry points.' },
-    { icon: '🛡️', title: 'Risk Management', description: 'Strategic hedging techniques and diversified allocations to mitigate volatility.' },
-    { icon: '🏛️', title: 'Institutional Backing', description: 'We prioritize assets supported by top VCs, hedge funds, and tech leaders.' },
-    { icon: '🚀', title: 'Long-Term Viability', description: 'Focus on assets positioned for sustainable market dominance.' },
+    { Icon: Zap, title: 'Disruptive Potential', description: 'Investments must be on the cutting edge of AI, blockchain, biotech, or automation.' },
+    { Icon: TrendingUp, title: 'Scalability', description: 'Companies or assets must demonstrate exponential growth potential.' },
+    { Icon: Clock, title: 'Market Timing', description: 'Utilizing advanced data analytics and AI-driven models to determine optimal entry points.' },
+    { Icon: Shield, title: 'Risk Management', description: 'Strategic hedging techniques and diversified allocations to mitigate volatility.' },
+    { Icon: LandmarkIcon, title: 'Institutional Backing', description: 'We prioritize assets supported by top VCs, hedge funds, and tech leaders.' },
+    { Icon: Rocket, title: 'Long-Term Viability', description: 'Focus on assets positioned for sustainable market dominance.' },
   ];
 
   const processSteps = [
@@ -167,7 +168,9 @@ export default function Performance() {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className="text-3xl mb-2">{criteria.icon}</div>
+                <div className="mb-4">
+                  <criteria.Icon className="h-8 w-8 text-primary" strokeWidth={1.5} />
+                </div>
                 <h3 className="text-lg font-bold mb-2">{criteria.title}</h3>
                 <p className="text-sm text-gray-600">{criteria.description}</p>
               </motion.div>
