@@ -6,7 +6,7 @@ export default function Home() {
     <div className="min-h-screen w-full flex items-center justify-center bg-white">
       <div className="text-center space-y-8">
         <motion.h1 
-          className="text-5xl md:text-7xl font-bold text-primary font-['Crimson_Text']"
+          className="text-5xl md:text-7xl font-bold text-primary font-['Playfair_Display']"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}

@@ -16,7 +16,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
         onAnimationComplete={onComplete}
       >
         <motion.h1 
-          className="text-5xl md:text-7xl font-bold text-primary font-['Crimson_Text']"
+          className="text-5xl md:text-7xl font-bold text-primary font-['Playfair_Display']"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
