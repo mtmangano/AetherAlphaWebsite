@@ -7,7 +7,7 @@ export default function Performance() {
   const performanceData = [
     { year: 2024, return: 342 },
     { year: 2023, return: 112 },
-    { year: 2022, return: 63 },
+    { year: 2022, return: 98 },
   ];
 
   const portfolioData = [
@@ -22,7 +22,7 @@ export default function Performance() {
   const COLORS = ['#0088FE', '#00C4B4', '#FFBB28', '#FF8042', '#8884d8', '#82ca9d'];
 
   const selectionCriteria = [
-    { Icon: Zap, title: 'Disruptive Potential', description: 'Every investment is meticulously chosen from the forefront of AI, blockchain, biotech, and automation—targeting innovations that redefine the future' },
+    { Icon: Zap, title: 'Disruptive Potential', description: 'Investing at the forefront of AI, blockchain, biotech, and automation.' },
     { Icon: TrendingUp, title: 'Scalability', description: 'Companies or assets must demonstrate exponential growth potential.' },
     { Icon: Clock, title: 'Market Timing', description: 'Utilizing advanced data analytics and AI-driven models to determine optimal entry points.' },
     { Icon: Shield, title: 'Risk Management', description: 'Strategic hedging techniques and diversified allocations to mitigate volatility.' },
