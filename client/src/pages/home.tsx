@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { useLocation } from "wouter";
 
 export default function Home() {
+  const [, setLocation] = useLocation();
+
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-white">
       <div className="text-center space-y-8">
@@ -21,6 +24,7 @@ export default function Home() {
         >
           <Button 
             className="text-lg font-normal text-black hover:text-white bg-transparent hover:bg-primary transition-colors border-none"
+            onClick={() => setLocation("/performance")}
           >
             Explore the Alpha Fund
           </Button>

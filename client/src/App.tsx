@@ -5,12 +5,14 @@ import { queryClient } from "./lib/queryClient";
 import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
+import Performance from "@/pages/performance";
 import IntroAnimation from "@/components/intro-animation";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/performance" component={Performance} />
       <Route component={NotFound} />
     </Switch>
   );
