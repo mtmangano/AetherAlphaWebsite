@@ -12,15 +12,15 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5, delay: 2.5 }}
+        transition={{ duration: 1, delay: 2.5 }}
         onAnimationComplete={onComplete}
       >
         <motion.h1 
-          className="text-5xl md:text-7xl font-bold text-primary font-['Playfair_Display']"
+          className="text-5xl md:text-7xl font-bold text-primary font-['Inter']"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 1,
+            duration: 1.5,
             ease: "easeOut"
           }}
         >
