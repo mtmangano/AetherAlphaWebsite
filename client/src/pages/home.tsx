@@ -20,7 +20,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 1.2 }}
         >
           <Button 
-            className="text-lg font-medium bg-transparent hover:bg-primary hover:text-white transition-colors border-none"
+            className="text-lg font-normal text-black hover:text-white bg-transparent hover:bg-primary transition-colors border-none"
           >
             Explore the Alpha Fund
           </Button>
