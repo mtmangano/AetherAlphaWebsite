@@ -8,11 +8,11 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
   return (
     <AnimatePresence>
       <motion.div 
-        className="fixed inset-0 flex items-center justify-center bg-white"
+        className="fixed inset-0 flex items-center justify-center bg-white z-50"
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 1, delay: 2.5 }}
+        transition={{ duration: 1 }}
         onAnimationComplete={onComplete}
       >
         <motion.h1 

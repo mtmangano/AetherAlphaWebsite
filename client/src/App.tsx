@@ -21,11 +21,10 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {showIntro ? (
+      {showIntro && (
         <IntroAnimation onComplete={() => setShowIntro(false)} />
-      ) : (
-        <Router />
       )}
+      <Router />
       <Toaster />
     </QueryClientProvider>
   );
