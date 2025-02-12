@@ -42,19 +42,19 @@ export default function Performance() {
     <div className="min-h-screen w-full bg-white p-8">
       {/* Logo/Home button */}
       <Link href="/">
-        <motion.h1 
-          className="text-3xl font-bold text-primary font-['Inter'] cursor-pointer"
-          whileHover={{ 
-            scale: 1.05,
-            transition: {
-              duration: 0.2,
-              ease: "easeInOut"
-            }
-          }}
-          whileTap={{ scale: 0.95 }}
+        <motion.div 
+          className="inline-block"  // Added container to prevent layout shifts
         >
-          AetherAlpha
-        </motion.h1>
+          <motion.h1 
+            className="text-3xl font-bold text-primary font-['Inter'] cursor-pointer text-center"
+            whileHover={{ 
+              scale: 1.05
+            }}
+            whileTap={{ scale: 0.95 }}
+          >
+            AetherAlpha
+          </motion.h1>
+        </motion.div>
       </Link>
 
       {/* Main Content */}
