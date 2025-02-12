@@ -178,23 +178,43 @@ export default function Performance() {
           </div>
 
           {/* Investment Process Flowchart */}
-          <div className="flex flex-wrap justify-center items-center gap-4">
-            {processSteps.map((step, index) => (
-              <motion.div
-                key={step}
-                className="flex items-center"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="bg-primary text-white px-4 py-2 rounded-lg">
-                  {step}
-                </div>
-                {index < processSteps.length - 1 && (
-                  <div className="mx-2 text-primary">→</div>
-                )}
-              </motion.div>
-            ))}
+          <div className="flex flex-col items-center space-y-8">
+            <div className="flex flex-wrap justify-center items-center gap-4">
+              {processSteps.map((step, index) => (
+                <motion.div
+                  key={step}
+                  className="flex items-center"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <motion.div 
+                    className="bg-primary text-white px-6 py-3 rounded-lg shadow-lg"
+                    whileHover={{ 
+                      scale: 1.05,
+                      boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 300,
+                      damping: 20
+                    }}
+                  >
+                    <span className="font-semibold">{index + 1}. {step}</span>
+                  </motion.div>
+                  {index < processSteps.length - 1 && (
+                    <motion.div 
+                      className="mx-4 text-primary text-xl font-bold"
+                      initial={{ scale: 0.8, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      transition={{ delay: index * 0.1 + 0.2 }}
+                    >
+                      →
+                    </motion.div>
+                  )}
+                </motion.div>
+              ))}
+            </div>
           </div>
         </motion.div>
 
